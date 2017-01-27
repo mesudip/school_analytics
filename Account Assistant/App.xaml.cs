@@ -13,5 +13,6 @@ namespace Account_Assistant
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }

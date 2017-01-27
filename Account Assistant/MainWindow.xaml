@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:Account_Assistant"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid Margin="10">
+        <DataGrid Name="search_result" Margin="140,0,0,0" SelectionChanged="search_result_SelectionChanged">
+            
+        </DataGrid>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>
+    
