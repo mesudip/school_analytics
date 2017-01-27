@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account Assistant", "Accoun
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{05A3C517-08ED-4026-B0D8-87DD156BBD31}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Desktop\Database Model.mwb = ..\..\..\..\Desktop\Database Model.mwb
 		DatabaseAccess.cs = DatabaseAccess.cs
 	EndProjectSection
 EndProject

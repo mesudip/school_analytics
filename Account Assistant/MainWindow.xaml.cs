@@ -46,26 +46,7 @@ namespace Account_Assistant
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                string tableName = textBox.GetLineText(0);
-                string conString = @"server=localhost;userid=root;password=Sunita50655496;database=schoolmanagement";
-                MySqlConnection connection = new MySqlConnection(conString);
-                connection.Open();
-                string command = "select * from "+tableName;
-                MySqlCommand mysql_command = new MySqlCommand(command, connection);
-                Console.WriteLine("Query Output");
-                MySqlDataAdapter adaptor = new MySqlDataAdapter(mysql_command);
-                DataTable table = new DataTable(tableName);
-                adaptor.Fill(table);
-                search_result.ItemsSource = table.DefaultView;
-
-                
-            }
-            catch (MySqlException ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
+            Database.Interface.FindStudent(textBox.Text,search_result);
         }
 
         private void search_result_SelectionChanged(object sender, SelectionChangedEventArgs e)
