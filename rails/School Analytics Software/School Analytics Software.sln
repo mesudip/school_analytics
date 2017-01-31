@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School Analytics Software", "School Analytics Software\School Analytics Software.csproj", "{C00A7F6E-F6AF-4057-9F98-E208EB55D701}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C00A7F6E-F6AF-4057-9F98-E208EB55D701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C00A7F6E-F6AF-4057-9F98-E208EB55D701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C00A7F6E-F6AF-4057-9F98-E208EB55D701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C00A7F6E-F6AF-4057-9F98-E208EB55D701}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
