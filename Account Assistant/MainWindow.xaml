@@ -1,18 +1,45 @@
-﻿<Window x:Class="Account_Assistant.MainWindow"
+﻿<Window x:Class="SEproject.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Account_Assistant"
+        xmlns:local="clr-namespace:SEproject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid Margin="10">
-        <DataGrid Name="search_result" Margin="140,0,0,0" SelectionChanged="search_result_SelectionChanged">
-            
-        </DataGrid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+         Title="SchoolManagementSystem" Height="543.461" Width="932.513" WindowStyle="None" Visibility="Visible" AllowsTransparency="True">
+    <Grid HorizontalAlignment="Left" Width="923">
+        <Rectangle x:Name="main_background" Fill="#FFF9F9F9" HorizontalAlignment="Left" Height="543" VerticalAlignment="Top" Width="933" Stroke="#FFCDCDCD" Margin="0,0,-10,0"/>
+
+        <Rectangle HorizontalAlignment="Left" Width="199" IsEnabled="False" Fill="#FF07F4FF" Stroke="#FFC3C3C3"/>
+        <Rectangle x:Name="TitleBarRect" Fill="#FFEEEEF2" HorizontalAlignment="Left" Height="28" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="933" MouseDown="DragTitlebar" Margin="0,0,-10,0"/>
+        <Button x:Name="Minimizebutton" Content="_" HorizontalAlignment="Left" Margin="869,5,0,0" VerticalAlignment="Top" Width="24" Height="22" RenderTransformOrigin="0.4,-1.522" FontSize="14" Background="{x:Null}" BorderBrush="WhiteSmoke" Click="Minimizebutton_Click"/>
+        <Button x:Name="CloseButton" Content="X" HorizontalAlignment="Left" Margin="898,5,0,0" VerticalAlignment="Top" Width="25" Height="22" Background="{x:Null}" Click="CloseButton_Click" RenderTransformOrigin="-0.793,0.607" BorderBrush="WhiteSmoke"/>
+
+        <Label x:Name="label" Content="School Management System" HorizontalAlignment="Left" VerticalAlignment="Top" Width="175" Margin="10,1,0,0" Foreground="#FF767676"/>
+
+
+        <StackPanel Margin="0,27,0,0">
+
+            <Button  Content="Login"  Margin="0,0,726,0" Height="63" Click="login_Click" BorderBrush="#FF07F4FF" Foreground="White" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Button.Background>
+                    <ImageBrush ImageSource="login_icon.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="-0.3"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button Content="homepage" Margin="2,0,726,0" Height="58" Click="HomepageClick" Background="#FF07F4FF" FontSize="18" BorderBrush="#FF07F4FF" Foreground="#FFF9F9F9" FontWeight="Bold"/>
+            <Button Content="Student" Margin="2,0,726,0" Height="54" Click="page1click" FontSize="18" Foreground="#FFF9F7F7" BorderBrush="#FF07F4FF" FontWeight="Bold" />
+
+
+        </StackPanel>
+        <Frame x:Name="Main" Margin="213,33,0,0" NavigationUIVisibility="Hidden" />
 
     </Grid>
 </Window>
-    

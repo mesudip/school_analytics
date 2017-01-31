@@ -1,5 +1,4 @@
-﻿using Database;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,45 +12,55 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MySql.Data.MySqlClient;
-using System.Data;
 
-namespace Account_Assistant
+namespace SEproject
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public class User
-    {
-        public int Id { get; set; }
-
-        public string Name { get; set; }
-
-        public DateTime Birthday { get; set; }
-    }
-
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
-            
             InitializeComponent();
-            List<User> users = new List<User>();
-            users.Add(new User() { Id = 1, Name = "John Doe", Birthday = new DateTime(1971, 7, 23) });
-            users.Add(new User() { Id = 2, Name = "Jane Doe", Birthday = new DateTime(1974, 1, 17) });
-            users.Add(new User() { Id = 3, Name = "Sammy Doe", Birthday = new DateTime(1991, 9, 2) });
-            search_result.ItemsSource = users;
-            
+        }
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+            // this.Close();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+
+
+        private void DragTitlebar(object sender, MouseButtonEventArgs e)
         {
-            Database.Interface.FindStudent(textBox.Text,search_result);
+            {
+                if (e.LeftButton == MouseButtonState.Pressed)
+                {
+                    this.DragMove();
+                }
+            }
         }
 
-        private void search_result_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Minimizebutton_Click(object sender, RoutedEventArgs e)
         {
+            this.WindowState = WindowState.Minimized;
+        }
 
+        private void HomepageClick(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new HomePage();
+
+        }
+
+        private void page1click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Student();
+        }
+
+        private void login_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new login();
         }
     }
 }
