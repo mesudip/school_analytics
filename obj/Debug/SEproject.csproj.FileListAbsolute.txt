@@ -1,0 +1,124 @@
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\bin\Debug\SEproject.exe.config
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\bin\Debug\SEproject.exe
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\bin\Debug\SEproject.pdb
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\MainWindow.g.cs
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\App.g.cs
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject_MarkupCompile.cache
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject_MarkupCompile.lref
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\MainWindow.baml
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.g.resources
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.Properties.Resources.resources
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.csproj.GenerateResource.Cache
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.exe
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.pdb
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\HomePage.g.cs
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\login.g.cs
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Student.g.cs
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\HomePage.baml
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\login.baml
+c:\users\zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Student.baml
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\SEproject\bin\Debug\MySql.Data.dll
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\SEproject\bin\Debug\MySql.Data.xml
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\SEproject\obj\Debug\AddNew.g.cs
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\SEproject\obj\Debug\AddNew.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Window1.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Window1.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Update.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Update.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Search.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Search.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\AddStaff.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\AddStaff.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Admin.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Admin.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\StaffUpdate.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\StaffUpdate.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Delete.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Delete.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Window2_MarkSheet.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Window2_MarkSheet.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Window2_AddMarkSheet.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Window2_AddMarkSheet.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.csprojResolveAssemblyReference.cache
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.Form1.resources
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.Form2.resources
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Attendance.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Attendance.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\ClassPerformance.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\ClassPerformance.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.Class1.resources
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\SEproject.Class2.resources
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Add_Marksheet_Page.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Add_Marksheet_Page.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Add_Attendance_Page.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\Add_Attendance_Page.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\ViewMarksheetPage.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\ViewMarksheetPage.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\AdminSearchPage.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\AdminSearchPage.baml
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\AdminDeletePage.g.cs
+C:\Users\Zimba\documents\visual studio 2015\Projects\SEproject\SEproject\obj\Debug\AdminDeletePage.baml
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\SEproject\bin\Debug\databaseBackend.dll
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\SEproject\bin\Debug\databaseBackend.pdb
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.csprojResolveAssemblyReference.cache
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\AddNew.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\AddStaff.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Add_Attendance_Page.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Add_Marksheet_Page.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Admin.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\AdminDeletePage.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\AdminSearchPage.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Attendance.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\ClassPerformance.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Delete.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\HomePage.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\login.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\MainWindow.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Search.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\StaffUpdate.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Student.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Update.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\ViewMarksheetPage.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window1.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window2_AddMarkSheet.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window2_MarkSheet.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\App.g.cs
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject_MarkupCompile.cache
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject_MarkupCompile.lref
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.exe
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.pdb
+C:\Users\Zimba\Documents\SEgithub\school_analytics\bin\Debug\SEproject.exe.config
+C:\Users\Zimba\Documents\SEgithub\school_analytics\bin\Debug\SEproject.exe
+C:\Users\Zimba\Documents\SEgithub\school_analytics\bin\Debug\SEproject.pdb
+C:\Users\Zimba\Documents\SEgithub\school_analytics\bin\Debug\databaseBackend.dll
+C:\Users\Zimba\Documents\SEgithub\school_analytics\bin\Debug\MySql.Data.dll
+C:\Users\Zimba\Documents\SEgithub\school_analytics\bin\Debug\databaseBackend.pdb
+C:\Users\Zimba\Documents\SEgithub\school_analytics\bin\Debug\MySql.Data.xml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\AddNew.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\AddStaff.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Add_Attendance_Page.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Add_Marksheet_Page.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Admin.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\AdminDeletePage.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\AdminSearchPage.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Attendance.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\ClassPerformance.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Delete.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\HomePage.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\login.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\MainWindow.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Search.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\StaffUpdate.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Student.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Update.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\ViewMarksheetPage.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window1.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window2_AddMarkSheet.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window2_MarkSheet.baml
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.g.resources
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.Class1.resources
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.Class2.resources
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.Form1.resources
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.Form2.resources
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.Properties.Resources.resources
+C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.csproj.GenerateResource.Cache

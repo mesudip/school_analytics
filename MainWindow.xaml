@@ -1,0 +1,236 @@
+﻿<Window x:Class="SEproject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SEproject"
+        mc:Ignorable="d"
+         Title="SchoolManagementSystem" Height="636.333" Width="967.821" WindowStyle="None" Visibility="Visible" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Grid HorizontalAlignment="Left" Width="968" Background="#FFA6A6A6">
+        <Rectangle x:Name="main_background" Fill="#FFF9F9F9" HorizontalAlignment="Left" Height="636" VerticalAlignment="Top" Width="968" Stroke="#FFCDCDCD"/>
+
+        <Rectangle HorizontalAlignment="Left" Width="199" IsEnabled="False" Fill="#FF0597B8" Stroke="#FFB4B4B4"/>
+        <Rectangle x:Name="TitleBarRect" Fill="#FFE2E2E2" HorizontalAlignment="Left" Height="31" Stroke="#FFB4B4B4" VerticalAlignment="Top" Width="968" MouseDown="DragTitlebar"/>
+        <Rectangle Fill="#FFEEEEF2" HorizontalAlignment="Left" Height="44" Margin="199,30,0,0" Stroke="#FFEEEEF2" VerticalAlignment="Top" Width="769"/>
+
+        <Button x:Name="Minimizebutton" Content="_" HorizontalAlignment="Left" Margin="906,5,0,0" VerticalAlignment="Top" Width="24" Height="22" RenderTransformOrigin="0.4,-1.522" FontSize="14" Background="{x:Null}" BorderBrush="WhiteSmoke" Click="Minimizebutton_Click"/>
+        <Button x:Name="CloseButton" Content="X" HorizontalAlignment="Left" Margin="935,5,0,0" VerticalAlignment="Top" Width="25" Height="22" Background="{x:Null}" Click="CloseButton_Click" RenderTransformOrigin="-0.793,0.607" BorderBrush="WhiteSmoke"/>
+
+        <Label x:Name="label" Content="School Management System" HorizontalAlignment="Left" VerticalAlignment="Top" Width="175" Margin="10,1,0,0" Foreground="#FF767676"/>
+
+
+        <StackPanel Margin="0,73,0,0">
+            <StackPanel.Background>
+                <ImageBrush Stretch="Uniform"/>
+            </StackPanel.Background>
+
+            <Button  Content="           Login"  Margin="0,0,770,0" Height="50" Click="login_Click" BorderBrush="#FF0597B8" Foreground="White" FontWeight="Medium" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center">
+                <Button.Background>
+                    <ImageBrush ImageSource="login1.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="-0.37"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button Content=" Homepage" Margin="0,0,770,0" Height="50" Click="HomepageClick" FontSize="18" BorderBrush="#FF0597B8" Foreground="#FFF9F9F9" FontWeight="Medium" RenderTransformOrigin="0.5,0.5" Width="196" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="home.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.75" ScaleY="0.75"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="-0.38"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+
+
+
+            <Button Content="           Student" Margin="2,0,770,0" Height="50" Click="page1click" FontSize="18" Foreground="#FFF9F7F7" BorderBrush="#FF0597B8" FontWeight="SemiBold" HorizontalContentAlignment="Left">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="student1.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.75" ScaleY="0.75"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="-0.38"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Add Marksheet   " Margin="2,0,770,0" Height="50" Click="AddMarksheetClick" FontSize="18" Foreground="#FFF9F7F7" BorderBrush="#FF0597B8" FontWeight="SemiBold" RenderTransformOrigin="0.1,0.5" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Right" >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.5"/>
+                    </TransformGroup>
+                </Button.LayoutTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="12.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.75" ScaleY="0.75"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="-0.38"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Add Attendance  " Margin="2,0,770,0" Height="50" Click="AddAttendenceclick" FontSize="18" Foreground="#FFF9F7F7" BorderBrush="#FF0597B8" FontWeight="SemiBold" HorizontalContentAlignment="Right" TextOptions.TextHintingMode="Animated" >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="panda.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.75" ScaleY="0.75"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="-0.38"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="View Marksheet  " Margin="2,0,770,0" Height="50" Click="ViewMarksheetclick" FontSize="18" Foreground="#FFF9F7F7" BorderBrush="#FF0597B8" FontWeight="SemiBold" HorizontalContentAlignment="Right" TextOptions.TextHintingMode="Animated" >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="studentIn.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.75" ScaleY="0.75"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="-0.38"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="           Class" Margin="2,0,770,0" Height="50" Click="classClick" FontSize="18" Foreground="#FFF9F7F7" FontWeight="SemiBold" RenderTransformOrigin="0.1,0.5" HorizontalContentAlignment="Left" >
+                <Button.BorderBrush>
+                    <ImageBrush ImageSource="stuent.png"/>
+                </Button.BorderBrush>
+                <Button.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.5"/>
+                    </TransformGroup>
+                </Button.LayoutTransform>
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="stuent.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.75" ScaleY="0.75"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="-0.38"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+
+
+            <Button Content=" Admin Panel       " Margin="2,0,770,0" Height="50" Click="Adminclick" FontSize="18" Foreground="#FFF9F7F7" BorderBrush="#FF0597B8" FontWeight="SemiBold" HorizontalContentAlignment="Right" TextOptions.TextHintingMode="Animated" >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="Tools.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.75" ScaleY="0.75"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="-0.38"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+
+
+
+
+        </StackPanel>
+
+
+        <Frame x:Name="Main" Margin="204,32,0,0" NavigationUIVisibility="Hidden" />
+        <Label x:Name="Login" Content="None" HorizontalAlignment="Left" Height="26" Margin="880,43,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="LoginType" Content="" Height="26" Margin="762,43,0,0" Width="86" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Right"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="35" Margin="850,36,0,0" VerticalAlignment="Top" Width="47" RenderTransformOrigin="0.972,0.226" Source="login1.png"/>
+        <Label x:Name="label1" Content="Menu       " HorizontalAlignment="Left" Height="42" Margin="0,31,0,0" VerticalAlignment="Top" Width="197" Foreground="White" HorizontalContentAlignment="Center" FontSize="18" FontWeight="SemiBold"/>
+
+
+
+
+    </Grid>
+</Window>

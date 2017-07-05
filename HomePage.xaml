@@ -1,0 +1,30 @@
+﻿<Page x:Class="SEproject.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SEproject"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="850"
+      Title="HomePage">
+
+    <Grid>
+        <Calendar HorizontalAlignment="Left" VerticalAlignment="Top" Margin="549,177,0,0" Height="189" Width="219"/>
+
+
+        <GroupBox x:Name="groupBox"  HorizontalAlignment="Left" Height="250" Margin="39,116,0,0" VerticalAlignment="Top" Width="325">
+            <Label x:Name="label8" Content="Apr 1-     All Year I part Exam Start" HorizontalAlignment="Left" Margin="-6,196,0,0" VerticalAlignment="Top" Width="232"/>
+
+        </GroupBox>
+        <Label x:Name="label" Content="Events" HorizontalAlignment="Left" Height="38" Margin="39,103,0,0" VerticalAlignment="Top" Width="325" Background="#FF0597B8" Foreground="White"/>
+        <Label x:Name="label1" Content="Feb 9 -   Pulchowk Locus 2017 (Day 1)" HorizontalAlignment="Left" Height="33" Margin="39,206,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label x:Name="label2" Content="Feb 10 -  Pulchowk Locus 2017 (Day 2)" HorizontalAlignment="Left" Height="33" Margin="39,239,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label x:Name="label3" Content="Feb 11 -  Pulchowk Locus 2017 (Day 3)" HorizontalAlignment="Left" Height="33" Margin="39,259,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label x:Name="label4" Content="Feb 14 -  Pulchowk Locus 2017 (Closing Ceremony)" HorizontalAlignment="Left" Height="33" Margin="39,288,0,0" VerticalAlignment="Top" Width="291"/>
+        <Label x:Name="label5" Content="Feb 3 -   Pulchowk Locus Hack-a-Week (start)" HorizontalAlignment="Left" Height="33" Margin="39,146,0,0" VerticalAlignment="Top" Width="291"/>
+        <Label x:Name="label6" Content="Feb 7 -   Pulchowk Locus Hack-a-Week (End)" HorizontalAlignment="Left" Height="33" Margin="39,173,0,0" VerticalAlignment="Top" Width="291"/>
+        <Label x:Name="label7" Content="Search" HorizontalAlignment="Left" Height="29" Margin="427,103,0,0" VerticalAlignment="Top" Width="115" Background="#FF0597B8" BorderBrush="#FF0597B8" Foreground="White"/>
+        <ComboBox x:Name="comboBox" Text="Search Name" HorizontalAlignment="Left" Height="29" Margin="557,103,0,0" VerticalAlignment="Top" Width="181" IsEditable="True" FontStyle="Italic" Foreground="#FF919191"/>
+
+    </Grid>
+</Page>
