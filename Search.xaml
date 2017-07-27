@@ -19,6 +19,8 @@
         </GroupBox>
         <Label x:Name="label" Content="Name" HorizontalAlignment="Left" Height="23" Margin="21,90,0,0" VerticalAlignment="Top" Width="88"/>
         <TextBox x:Name="Name" HorizontalAlignment="Left" Height="23" Margin="134,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="13" Background="#FFF9F9F9" BorderBrush="#FFF9F9F9" FontFamily="Segoe UI Semibold"/>
+        <Label x:Name="labelq" Content="Student Id" HorizontalAlignment="Left" Height="23" Margin="116,88,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1"/>
+        <TextBox x:Name="studentId" HorizontalAlignment="Left" Height="23" Margin="229,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Grid.Column="1" BorderBrush="{x:Null}"/>
         <Label x:Name="label1" Content="Address" HorizontalAlignment="Left" Height="23" Margin="21,118,0,0" VerticalAlignment="Top" Width="88"/>
         <TextBox x:Name="Address" HorizontalAlignment="Left" Height="23" Margin="134,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" FontWeight="Bold" BorderBrush="#FFF9F9F9" Background="#FFF9F9F9" FontFamily="Segoe UI Semibold"/>
         <Label x:Name="label2" Content="Class" HorizontalAlignment="Left" Height="23" Margin="21,146,0,0" VerticalAlignment="Top" Width="88"/>
@@ -29,7 +31,7 @@
         <TextBox x:Name="RollNo" HorizontalAlignment="Left" Height="27" Margin="135,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2" FontWeight="Bold" BorderBrush="#FFF9F9F9" Background="#FFF9F9F9" FontFamily="Segoe UI Semibold"/>
 
 
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="103" Margin="251,118,0,0" VerticalAlignment="Top" Width="105" Source="login_icon.png" Stretch="Fill" OpacityMask="#FFAE3131" Grid.Column="1"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="103" Margin="251,141,0,0" VerticalAlignment="Top" Width="105" Source="login_icon.png" Stretch="Fill" OpacityMask="#FFAE3131" Grid.Column="1"/>
         <Label x:Name="label5" Content="Father Name" HorizontalAlignment="Left" Height="23" Margin="21,271,0,0" VerticalAlignment="Top" Width="88"/>
         <TextBox x:Name="FatherName" HorizontalAlignment="Left" Height="23" Margin="134,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" FontWeight="Bold" Background="#FFF9F9F9" BorderBrush="#FFF9F9F9" FontFamily="Segoe UI Semibold"/>
         <Label x:Name="label6" Content="Phone Number" HorizontalAlignment="Left" Height="23" Margin="116,271,0,0" VerticalAlignment="Top" Width="99" Grid.Column="1"/>
@@ -55,7 +57,7 @@
         <TextBox x:Name="Bus" HorizontalAlignment="Left" Height="23" Margin="134,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" FontWeight="Bold" BorderBrush="#FFF9F9F9" Background="#FFF9F9F9" FontFamily="Segoe UI Semibold"/>
         <Label x:Name="label16" Content="Hostel" HorizontalAlignment="Left" Height="23" Margin="118,395,0,0" VerticalAlignment="Top" Width="97" Grid.Column="1"/>
         <TextBox x:Name="Hostel" HorizontalAlignment="Left" Height="23" Margin="220,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Grid.Column="1" FontWeight="Bold" BorderBrush="#FFF9F9F9" Background="#FFF9F9F9" FontFamily="Segoe UI Semibold"/>
-        
+
 
 
 

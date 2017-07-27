@@ -59,15 +59,16 @@ namespace SEproject
                 }
                 else {
 
-                    //string myConnection = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+                    string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
                     //string myConnection = "datasource=localhost;port=3306;username=root;password=12345";
                     //MySqlConnection myConn = new MySqlConnection(myConnection);
-                    MySqlConnection myConn=databaseBackend.databaseManager.connectDatabase();
+                    //MySqlConnection myConn=databaseBackend.databaseManager.connectDatabase();
+                    MySqlConnection conDatabase = new MySqlConnection(constring);
                     MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
+                    MySqlCommand SelectCommand = new MySqlCommand("SELECT * FROM latestspas.login where login_id='" + this.textBox.Text + "';", conDatabase);
+                   
                     MySqlDataReader myReader;
-                    MySqlCommand SelectCommand = new MySqlCommand("SELECT * FROM latestspas.login where login_id='" + this.textBox.Text + "';", myConn);
-
-                    myConn.Open();
+                    conDatabase.Open();
                     myReader = SelectCommand.ExecuteReader();
                     // int count = 0;
                     try
@@ -112,11 +113,11 @@ namespace SEproject
                             GID = textBox.Text;
                         }
                     }
-                    catch {
-                        MessageBox.Show("Wrong id or Password");
+                    catch(Exception ex) {
+                        MessageBox.Show("Error Has been detected " + ex.Message);
                     }
 
-                    myConn.Close();
+                    conDatabase.Close();
                 }
            
 

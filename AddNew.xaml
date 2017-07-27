@@ -9,28 +9,32 @@
       Title="AddNew">
 
     <Grid Margin="10,0,-10,0">
-        <GroupBox x:Name="groupBox" Header="Student Information" HorizontalAlignment="Left" Height="225" Margin="10,22,0,0" VerticalAlignment="Top" Width="590">
-            <DatePicker x:Name="DatePicker" HorizontalAlignment="Left" Height="25" Margin="119,131,0,0" VerticalAlignment="Top" Width="148"/>
+        <GroupBox x:Name="groupBox" Header="Student Information" HorizontalAlignment="Left" Height="237" Margin="10,22,0,0" VerticalAlignment="Top" Width="590">
+          
 
         </GroupBox>
         <Label x:Name="label" Content="Name" HorizontalAlignment="Left" Height="23" Margin="22,54,0,0" VerticalAlignment="Top" Width="88"/>
         <TextBox x:Name="Name" HorizontalAlignment="Left" Height="23" Margin="135,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="labelq" Content="Student Id" HorizontalAlignment="Left" Height="23" Margin="320,54,0,0" VerticalAlignment="Top" Width="88"/>
+        <TextBox x:Name="studentId" HorizontalAlignment="Left" Height="23" Margin="433,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
         <Label x:Name="label1" Content="Address" HorizontalAlignment="Left" Height="23" Margin="22,82,0,0" VerticalAlignment="Top" Width="88"/>
         <TextBox x:Name="Address" HorizontalAlignment="Left" Height="23" Margin="135,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="labela" Content="Password" HorizontalAlignment="Left" Height="23" Margin="320,82,0,0" VerticalAlignment="Top" Width="88"/>
+        <TextBox x:Name="Password" HorizontalAlignment="Left" Height="23" Margin="433,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
         <Label x:Name="label2" Content="Class" HorizontalAlignment="Left" Height="23" Margin="22,110,0,0" VerticalAlignment="Top" Width="88"/>
         <TextBox x:Name="Class" HorizontalAlignment="Left" Height="23" Margin="135,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
         <Label x:Name="label3" Content="Gender" HorizontalAlignment="Left" Height="23" Margin="22,138,0,0" VerticalAlignment="Top" Width="88"/>
         <RadioButton x:Name="Male1" Content="Male" HorizontalAlignment="Left" Height="23" Margin="135,144,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.47,0.696" Checked="Male1_Checked"/>
         <RadioButton x:Name="Female1" Content="Female" HorizontalAlignment="Left" Height="23" Margin="226,145,0,0" VerticalAlignment="Top" Width="100" Checked="Female1_Checked"/>
+        <DatePicker x:Name="DatePicker" HorizontalAlignment="Left" Height="25" Margin="136,166,0,0" VerticalAlignment="Top" Width="148"/>
         <Label x:Name="label4" Content="Date of Birth" HorizontalAlignment="Left" Height="23" Margin="22,169,0,0" VerticalAlignment="Top" Width="88"/>
         <Label x:Name="label13" Content="Roll No." HorizontalAlignment="Left" Height="25" Margin="22,207,0,0" VerticalAlignment="Top" Width="112"/>
         <TextBox x:Name="RollNo" HorizontalAlignment="Left" Height="27" Margin="136,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
 
 
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="107" Margin="455,54,0,0" VerticalAlignment="Top" Width="107" Source="login_icon.png" Stretch="Fill" OpacityMask="#FFAE3131"/>
-        <Button x:Name="button1" Content="Upload Image" HorizontalAlignment="Left" Height="28" Margin="431,169,0,0" VerticalAlignment="Top" Width="157" Background="#FF0597B8" BorderBrush="#FF0597B8" Foreground="#FFFFFBFB"/>
+       
 
-        <GroupBox x:Name="groupBox1" Header="Guardian Information" HorizontalAlignment="Left" Height="178" Margin="8,264,0,0" VerticalAlignment="Top" Width="590"/>
+        <GroupBox x:Name="groupBox1" Header="Guardian Information" HorizontalAlignment="Left" Height="178" Margin="15,271,0,0" VerticalAlignment="Top" Width="590"/>
         <Label x:Name="label5" Content="Father Name" HorizontalAlignment="Left" Height="23" Margin="20,298,0,0" VerticalAlignment="Top" Width="88"/>
         <TextBox x:Name="FatherName" HorizontalAlignment="Left" Height="23" Margin="133,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
         <Label x:Name="label6" Content="Phone Number" HorizontalAlignment="Left" Height="23" Margin="327,298,0,0" VerticalAlignment="Top" Width="99"/>
@@ -52,6 +56,8 @@
 
         </GroupBox>
         <CheckBox x:Name="checkBox1" Content="Hostel" HorizontalAlignment="Left" Height="21" Margin="325,484,0,0" VerticalAlignment="Top" Width="173" Checked="checkBox1_Checked"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="107" Margin="455,111,0,0" VerticalAlignment="Top" Width="107" Source="login_icon.png" Stretch="Fill" OpacityMask="#FFAE3131"/>
+        <Button x:Name="button1" Content="Upload Image" HorizontalAlignment="Left" Height="28" Margin="431,226,0,0" VerticalAlignment="Top" Width="157" Background="#FF0597B8" BorderBrush="#FF0597B8" Foreground="#FFFFFBFB"/>
         <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Height="27" Margin="226,528,0,0" VerticalAlignment="Top" Width="167" Click="button_Click" Background="#FF0597B8" Foreground="#FFFBFBFB" BorderBrush="#FF0597B8"/>
 
     </Grid>

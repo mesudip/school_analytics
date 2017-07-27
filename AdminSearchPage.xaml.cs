@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
-
+using System.Configuration;
 namespace SEproject
 {
     /// <summary>
@@ -34,8 +34,9 @@ namespace SEproject
 
         private void Searchbutton_Click(object sender, RoutedEventArgs e)
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            string Query = "select * from school_analytics_system.staff where username= '" + comboBox.Text + "' ;";
+            //string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+            string Query = "select * from latestspas.staff where name= '" + comboBox.Text + "' ;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
@@ -51,17 +52,16 @@ namespace SEproject
                 {
                     //MessageBox.Show("Data has been Updated");
                     //myReader.Read();
-                    string username = myReader.GetString("username");
-                    string user_id = myReader.GetString("user_id");
+                    string username = myReader.GetString("name");
+                    string user_id = myReader.GetString("idStaff");
                     string address = myReader.GetString("address");
-                    string smobile = myReader.GetString("mobile").ToString();
+                    string smobile = myReader.GetString("mobile_number").ToString();
                     string gender = myReader.GetString("gender");
                     string dob = myReader.GetString("dob");
                     string email = myReader.GetString("email");
-                    string fatherName = myReader.GetString("fatherName");
-                    string motherName = myReader.GetString("motherName");
-                    string profession = myReader.GetString("profession");
-                    
+                    string fatherName = myReader.GetString("father_name");
+                    string motherName = myReader.GetString("mother_name");
+                   // string sprof = myReader.GetString("profession");
 
                     Id.Text = user_id;
                     Name.Text = username;
@@ -72,8 +72,9 @@ namespace SEproject
                     Email1.Text = email;
                     FatherName.Text = fatherName;
                     MotherName.Text = motherName;
-                    password_Copy.Text = profession;
-                   
+                    //password_Copy.Text = sprof;
+
+
 
                     // myReader.Read();
 
@@ -92,8 +93,9 @@ namespace SEproject
         }
         void FillCombo()
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            string Query = "select * from school_analytics_system.staff  ;";
+            //string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+            string Query = "select * from latestspas.staff  ;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
@@ -105,7 +107,7 @@ namespace SEproject
                 //MessageBox.Show("Data has been Updated");
                 while (myReader.Read())
                 {
-                    string sName = myReader.GetString("username");
+                    string sName = myReader.GetString("name");
                     //string sRollNo = myReader.GetString("RollNo");
                     comboBox.Items.Add(sName);
 

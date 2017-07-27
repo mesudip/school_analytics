@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace SEproject
 {
@@ -30,14 +31,17 @@ namespace SEproject
 
         private void Deletebutton_Click(object sender, RoutedEventArgs e)
         {
-            bool c = checklogin1();
+            checkLogin asw = new checkLogin();
+
+            bool c = asw.checkLogin1();
             try
             {
                 if (c == true)
                 {
 
-                    string constring = "datasource=localhost;port=3306;username=root;password=12345";
-                    string Query = "delete from school_analytics_system.staff where user_id = '" + this.Id.Text + "';";
+                    //string constring = "datasource=localhost;port=3306;username=root;password=12345";
+                    string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+                    string Query = "delete from latestspas.staff where idStaff = '" + this.Id.Text + "';";
                     MySqlConnection conDatabase = new MySqlConnection(constring);
                     MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
                     MySqlDataReader myReader;
@@ -71,8 +75,9 @@ namespace SEproject
         }
         void FillCombo()
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            string Query = "select * from school_analytics_system.staff  ;";
+            //string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+            string Query = "select * from latestspas.staff ;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
@@ -84,7 +89,7 @@ namespace SEproject
                 //MessageBox.Show("Data has been Updated");
                 while (myReader.Read())
                 {
-                    string sName = myReader.GetString("username");
+                    string sName = myReader.GetString("name");
                     //string sRollNo = myReader.GetString("RollNo");
                     comboBox.Items.Add(sName);
 
@@ -103,8 +108,9 @@ namespace SEproject
 
         private void Searchbutton_Click(object sender, RoutedEventArgs e)
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            string Query = "select * from school_analytics_system.staff where username= '" + comboBox.Text + "' ;";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();//string constring = "datasource=localhost;port=3306;username=root;password=12345";
+
+            string Query = "select * from latestspas.staff where name= '" + comboBox.Text + "' ;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
@@ -120,16 +126,16 @@ namespace SEproject
                 {
                     //MessageBox.Show("Data has been Updated");
                     //myReader.Read();
-                    string username = myReader.GetString("username");
-                    string user_id = myReader.GetString("user_id");
+                    string username = myReader.GetString("name");
+                    string user_id = myReader.GetString("idStaff");
                     string address = myReader.GetString("address");
-                    string smobile = myReader.GetString("mobile").ToString();
+                    string smobile = myReader.GetString("mobile_number").ToString();
                     string gender = myReader.GetString("gender");
                     string dob = myReader.GetString("dob");
                     string email = myReader.GetString("email");
-                    string fatherName = myReader.GetString("fatherName");
-                    string motherName = myReader.GetString("motherName");
-                    string profession = myReader.GetString("profession");
+                    string fatherName = myReader.GetString("father_name");
+                    string motherName = myReader.GetString("mother_name");
+                    //string sprof = myReader.GetString("profession");
 
 
                     Id.Text = user_id;
@@ -141,7 +147,7 @@ namespace SEproject
                     Email1.Text = email;
                     FatherName.Text = fatherName;
                     MotherName.Text = motherName;
-                    password_Copy.Text = profession;
+                    //password_Copy.Text = sprof;
 
 
                     // myReader.Read();
@@ -158,62 +164,7 @@ namespace SEproject
                 MessageBox.Show(ex.Message);
             }
         }
-        private bool checklogin1()
-        {
-            string spassword, sprof;
-            login login1 = new login();
-            string password = login.Gpassword;
-            string id = login.GID;
-            if (id == "071bct550" && password == "zimba")
-            {
-                //MessageBox.Show("login successfully");
-                return true;
-            }
-            else
-            {
-                string constring = "datasource=localhost;port=3306;username=root;password=12345";
-                string Query = "select * from school_analytics_system.staff  where user_id= '" + id + "';";
-                MySqlConnection conDatabase = new MySqlConnection(constring);
-                MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
-                MySqlDataReader myReader;
-
-                try
-                {
-                    conDatabase.Open();
-                    myReader = cmdDatabase.ExecuteReader();
-                    //MessageBox.Show("Data has been Updated");
-                    while (myReader.Read())
-                    {
-
-                        spassword = myReader.GetString("password");
-                        sprof = myReader.GetString("profession");
-
-
-                        if (spassword == password && sprof == "Admin")
-                        {
-                            checkLogin = true;
-
-                        }
-                        else
-                        {
-                            checkLogin = false;
-                        }
-
-
-
-                    }
-                    return (checkLogin);
-
-
-                }
-                catch (Exception ex)
-                {
-
-                    MessageBox.Show(ex.Message);
-                    return (false);
-                }
-            }
-        }
+       
 
         private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

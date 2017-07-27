@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace SEproject
 {
@@ -21,12 +22,23 @@ namespace SEproject
     /// </summary>
     public partial class ViewMarksheetPage : Page
     {
-        bool checkLogin;
+        
         int PassMark = 32;
         int FullMark = 100;
-        int Number_Subject;
-        string sRollNo, sName, sNepali, sEnglish, sMath, sComputer, sScience, sSocial;
-        int nepali, english, math, computer, science, social;
+       
+        string sRollNo, sName, sNepali, sEnglish, sMath, spop, sScience, sSocial,sopt1,sopt2,sopt3;
+        int nepali, english, math, pop, science, social,opt1,opt2,opt3;
+
+        private void textBox72_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox34_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
         public ViewMarksheetPage()
         {
             InitializeComponent();
@@ -41,101 +53,7 @@ namespace SEproject
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
-            string Query;
-            Number_Subject = 6;
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            if (comboBox.SelectedIndex == 0)
-            {
-                Query = "select * from class_database.class_1 where roll_no= '" + textBox26.Text + "' ;";
-            }
-            else  
-            {
-                //check = true;
-                Query = "select * from class_database.class_2 where roll_no= '" + textBox26.Text + "' ;";
-            }
-
-           
-
-            MySqlConnection conDatabase = new MySqlConnection(constring);
-            MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
-            MySqlDataReader myReader;
-
-            try
-            {
-                conDatabase.Open();
-                myReader = cmdDatabase.ExecuteReader();
-                //System.Windows.Forms.MessageBox.Show("Data has been Saved Successfully");
-                while (myReader.Read())
-                {
-
-                    nepali = myReader.GetInt16("nepali");
-                    english = myReader.GetInt16("english");
-                    math = myReader.GetInt16("math");
-                    computer = myReader.GetInt16("computer");
-                    science = myReader.GetInt16("science");
-                    social = myReader.GetInt16("social");
-
-                    sRollNo = myReader.GetString("roll_no");
-                    sName = myReader.GetString("name");
-                    sNepali = nepali.ToString();
-                    sEnglish = english.ToString();
-                    sMath = math.ToString();
-                    sComputer = computer.ToString();
-                    sScience = science.ToString();
-                    sSocial = social.ToString();
-
-
-                    string TotalObtained = (nepali + english + math + computer + science + social).ToString();
-                    string TotalPassMarks = (Number_Subject * PassMark).ToString();
-                    string TotalFullMarks = (Number_Subject * FullMark).ToString();
-                    textBox16.Text = sNepali;
-                    textBox17.Text = sEnglish;
-                    textBox18.Text = sScience;
-                    textBox19.Text = sComputer;
-                    textBox20.Text = sSocial;
-                    textBox31.Text = sMath;
-                    textBox35.Text = TotalObtained;
-                    textBox34.Text = TotalPassMarks;
-                    textBox33.Text = TotalFullMarks;
-                    if (nepali < 32)
-                    {
-                        textBox36.Text = "FAIL";
-                    }
-
-                    else if (english < PassMark)
-                    {
-                        textBox36.Text = "FAIL";
-                    }
-                    else if (math < PassMark)
-                    {
-                        textBox36.Text = "FAIL";
-                    }
-                    else if (science < PassMark)
-                    {
-                        textBox36.Text = "FAIL";
-                    }
-                    else if (computer < PassMark)
-                    {
-                        textBox36.Text = "FAIL";
-                    }
-                    else if (social < PassMark)
-                    {
-                        textBox36.Text = "FAIL";
-                    }
-                    else
-                    {
-                        textBox36.Text = "PASS";
-                    }
-                }
-
-
-
-            }
-            catch (Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show("Something errors occurs in Database" + ex.Message);
-            }
-
+            GotoHell();
 
 
         }
@@ -143,41 +61,38 @@ namespace SEproject
         private void button1_Click(object sender, RoutedEventArgs e)
         {
 
-            Form1 forms = new Form1(sName, sRollNo, nepali, english, math, computer, science, social);
+            Form1 forms = new Form1(sName, sId.Text, (comboBox.SelectedIndex + 1), nepali, english, math, pop, science, social, opt1, opt2, opt3);
             forms.ShowDialog();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            int total;
+            //int total;
             string Query;
-            bool c = checklogin1();
+            checkLogin asw = new checkLogin();
+            bool c = asw.checkLogin1();
             try
             {
                 if (c)
                 {
-                    try
-                    {
-                        total = Int32.Parse(textBox16.Text) + Int32.Parse(textBox17.Text) + Int32.Parse(textBox18.Text) + Int32.Parse(textBox19.Text) + Int32.Parse(textBox20.Text) + Int32.Parse(textBox31.Text);
+                    //try
+                    //{
+                       
+                    //    total = Int32.Parse(textBox16.Text) + Int32.Parse(textBox17.Text) + Int32.Parse(textBox18.Text) + Int32.Parse(textBox19.Text) + Int32.Parse(textBox20.Text) + Int32.Parse(textBox31.Text)+Int32.Parse(textBox78.Text) + Int32.Parse(textBox79.Text) + Int32.Parse(textBox80.Text);
 
-                    }
-                    catch
-                    {
-                        total = 0;
-                        System.Windows.Forms.MessageBox.Show("Something is missing");
-                    }
+                    //}
+                    //catch
+                    //{
+                    //    total = 0;
+                    //    System.Windows.Forms.MessageBox.Show("Something is missing");
+                    //}
 
-                    string constring = "datasource=localhost;port=3306;username=root;password=12345";
-                    
+                    // string constring = "datasource=localhost;port=3306;username=root;password=12345";
+                    string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
                     // System.Windows.Forms.MessageBox.Show(comboxx);
-                    if (comboBox.SelectedIndex == 0)
-                    {
-                        Query = "update class_database.class_1 set nepali= '" + this.textBox16.Text + "', english='" + this.textBox17.Text + "', science= '" + this.textBox18.Text + "', social= '" + this.textBox20.Text + "', computer='" + this.textBox19.Text + "', math= '" + this.textBox31.Text + "', total='" + total + "' where  roll_no='" + this.textBox26.Text + "' ;";
-                    }
-                    else
-                    {
-                        Query = "update class_database.class_2 set nepali= '" + this.textBox16.Text + "', english='" + this.textBox17.Text + "', science= '" + this.textBox18.Text + "', social= '" + this.textBox20.Text + "', computer='" + this.textBox19.Text + "', math= '" + this.textBox31.Text + "', total='" + total + "' where  roll_no='" + this.textBox26.Text + "' ;";
-                    }
+                  
+                    Query = "update latestspas.exam set nepali= '" + this.textBox16.Text + "', english='" + this.textBox17.Text + "', science= '" + this.textBox18.Text + "', socialStudies= '" + this.textBox20.Text + "', popAndEnvironment='" + this.textBox31.Text + "', math= '" + this.textBox19.Text + "'where  Student_idStudent='" + this.sId.Text + "' and idClass='" + (comboBox.SelectedIndex + 1) + "' ;";
+                   
 
                     MySqlConnection conDatabase = new MySqlConnection(constring);
                     MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
@@ -224,8 +139,9 @@ namespace SEproject
         }
         void FillCombo()
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            string Query = "select * from school_analytics_system.student  ;";
+            // string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+            string Query = "select * from latestspas.student  ;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
@@ -237,8 +153,9 @@ namespace SEproject
                 //MessageBox.Show("Data has been Updated");
                 while (myReader.Read())
                 {
-                    string sName = myReader.GetString("Name");
-                    string sRollNo = myReader.GetString("RollNo");
+                    sName = myReader.GetString("name");
+                    sRollNo = myReader.GetString("roll_no");
+                    //string sRollNo = myReader.GetString("idClass");
                     textBox37.Items.Add(sName);
 
 
@@ -256,8 +173,15 @@ namespace SEproject
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            string Query = "select * from school_analytics_system.student where Name= '" + textBox37.Text + "' ;";
+            GotoHell();
+
+        }
+
+        private void GotoHell()
+        {
+            // string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+            string Query = "select * from latestspas.student where name= '" + textBox37.Text + "' ;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
@@ -273,12 +197,14 @@ namespace SEproject
                 {
                     //MessageBox.Show("Data has been Updated");
                     //myReader.Read();
-                    string sRollNo = myReader.GetString("RollNo");
+                   
+                    string sStudent = myReader.GetString("idStudent");
 
-
-
-
+                    string sRollNo = myReader.GetString("roll_no");
                     textBox37_Copy.Text = sRollNo;
+
+                    sId.Text = sStudent;
+                  
 
 
                     // myReader.Read();
@@ -297,14 +223,15 @@ namespace SEproject
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
+
         public void MarksheetShow()
         {
-            Number_Subject = 6;
+            //Number_Subject = 6;
             string Query;
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            Query = "select * from class_database.class_2 where roll_no= '" + textBox26.Text + "' ;";
+            //string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+            Query = "select * from latestspas.exam where Student_idStudent= '" + sId.Text + "' and idClass='" + (comboBox.SelectedIndex + 1) + "' ;";
 
             // check = true;
 
@@ -319,36 +246,72 @@ namespace SEproject
                 //System.Windows.Forms.MessageBox.Show("Data has been Saved Successfully");
                 while (myReader.Read())
                 {
-
+                   
                     nepali = myReader.GetInt16("nepali");
                     english = myReader.GetInt16("english");
                     math = myReader.GetInt16("math");
-                    computer = myReader.GetInt16("computer");
                     science = myReader.GetInt16("science");
-                    social = myReader.GetInt16("social");
+                    social = myReader.GetInt16("socialStudies");
+                    pop = myReader.GetInt16("popAndEnvironment");
+                    opt1 = myReader.GetInt16("opt1");
+                    opt2 = myReader.GetInt16("opt2");
+                    opt3 = myReader.GetInt16("opt3");
+                   
 
-                    sRollNo = myReader.GetString("roll_no");
-                    sName = myReader.GetString("name");
+
                     sNepali = nepali.ToString();
                     sEnglish = english.ToString();
                     sMath = math.ToString();
-                    sComputer = computer.ToString();
+                    spop = pop.ToString();
                     sScience = science.ToString();
                     sSocial = social.ToString();
+                    sopt1 = opt1.ToString();
+                    sopt2 = opt2.ToString();
+                    sopt3 = opt3.ToString();
 
-                    string TotalObtained = (nepali + english + math + computer + science + social).ToString();
-                    string TotalPassMarks = (Number_Subject * PassMark).ToString();
-                    string TotalFullMarks = (Number_Subject * FullMark).ToString();
+                    string TotalObtained = (nepali + english + math + pop + science + social +opt1 +opt2 +opt3).ToString();
+                    int subject = myReader.GetInt16("noSubject");
+
+                    string TotalPassMarks = (subject * PassMark).ToString();
+                    string TotalFullMarks = (subject * FullMark).ToString();
                     textBox16.Text = sNepali;
                     textBox17.Text = sEnglish;
                     textBox18.Text = sScience;
-                    textBox19.Text = sComputer;
+                    textBox19.Text = sMath;
                     textBox20.Text = sSocial;
-                    textBox31.Text = sMath;
-                    textBox35.Text = TotalObtained;
+                    textBox31.Text = spop;
+                    textBox78.Text = sopt1;
+                    textBox79.Text = sopt2;
+                    textBox80.Text = sopt3;
+                    textBox81.Text = TotalObtained;
                     textBox34.Text = TotalPassMarks;
                     textBox33.Text = TotalFullMarks;
-                    if (nepali < 32)
+
+                    if (subject == 7)
+                    {
+                        textBox72.Text = "100";
+                        textBox75.Text = "32";
+
+                    }
+                    if (subject == 8)
+                    {
+                        textBox72.Text = "100";
+                        textBox75.Text = "32";
+                        textBox73.Text = "100";
+                        textBox76.Text = "32";
+                    }
+                    if (subject == 9)
+                    {
+                        textBox72.Text = "100";
+                        textBox75.Text = "32";
+                        textBox73.Text = "100";
+                        textBox76.Text = "32";
+                        textBox74.Text = "100";
+                        textBox77.Text = "32";
+                    }
+
+
+                    if (nepali < PassMark)
                     {
                         textBox36.Text = "FAIL";
                     }
@@ -365,7 +328,7 @@ namespace SEproject
                     {
                         textBox36.Text = "FAIL";
                     }
-                    else if (computer < PassMark)
+                    else if (pop < PassMark)
                     {
                         textBox36.Text = "FAIL";
                     }
@@ -388,9 +351,10 @@ namespace SEproject
         }
         private void DateCalculate()
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            //string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+            string Query = "select * from latestspas.attendance where Student_idStudent= '" + sId.Text + "' and idClass='" + (comboBox.SelectedIndex + 1) + "' ;";
 
-            string Query = "select * from school_analytics_system.attendance_class2 where roll_no= '" + this.textBox26.Text + "' ;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
@@ -406,18 +370,18 @@ namespace SEproject
                 {
                     //System.Windows.Forms.MessageBox.Show("Data has been Updated");
                     //myReader.Read();
-                    textBox41.Text = myReader.GetInt16("sjan").ToString();
-                    textBox43.Text = myReader.GetInt16("sfeb").ToString();
-                    textBox45.Text = myReader.GetInt16("smar").ToString();
-                    textBox47.Text = myReader.GetInt16("sapril").ToString();
-                    textBox49.Text = myReader.GetInt16("smay").ToString();
-                    textBox51.Text = myReader.GetInt16("sjune").ToString();
-                    textBox53.Text = myReader.GetInt16("sjuly").ToString();
-                    textBox55.Text = myReader.GetInt16("saug").ToString();
-                    textBox57.Text = myReader.GetInt16("ssep").ToString();
-                    textBox59.Text = myReader.GetInt16("soct").ToString();
-                    textBox61.Text = myReader.GetInt16("snov").ToString();
-                    textBox63.Text = myReader.GetInt16("sdec").ToString();
+                    textBox41.Text = myReader.GetInt16("jan").ToString()+"/"+ myReader.GetInt16("sjan").ToString() ;
+                    textBox43.Text = myReader.GetInt16("feb").ToString() + "/" + myReader.GetInt16("sfeb").ToString();
+                    textBox45.Text = myReader.GetInt16("mar").ToString() + "/" + myReader.GetInt16("smar").ToString();
+                    textBox47.Text = myReader.GetInt16("apr").ToString() + "/" + myReader.GetInt16("sapr").ToString();
+                    textBox49.Text = myReader.GetInt16("may").ToString() + "/" + myReader.GetInt16("smay").ToString();
+                    textBox51.Text = myReader.GetInt16("jun").ToString() + "/" + myReader.GetInt16("sjun").ToString();
+                    textBox53.Text = myReader.GetInt16("jul").ToString() + "/" + myReader.GetInt16("sjul").ToString();
+                    textBox55.Text = myReader.GetInt16("aug").ToString() + "/" + myReader.GetInt16("saug").ToString();
+                    textBox57.Text = myReader.GetInt16("sep").ToString() + "/" + myReader.GetInt16("ssep").ToString();
+                    textBox59.Text = myReader.GetInt16("oct").ToString() + "/" + myReader.GetInt16("soct").ToString();
+                    textBox61.Text = myReader.GetInt16("nov").ToString() + "/" + myReader.GetInt16("snov").ToString();
+                    textBox63.Text = myReader.GetInt16("adec").ToString() + "/" + myReader.GetInt16("sdec").ToString();
 
 
 
@@ -437,61 +401,7 @@ namespace SEproject
             }
 
         }
-        private bool checklogin1()
-        {
-            string spassword, sprof;
-            login login1 = new login();
-            string password = login.Gpassword;
-            string id = login.GID;
-            if (id == "071bct550" && password == "zimba")
-            {
-                //MessageBox.Show("login successfully");
-                return true;
-            }
-            else
-            {
-                string constring = "datasource=localhost;port=3306;username=root;password=12345";
-                string Query = "select * from school_analytics_system.staff  where user_id= '" + id + "';";
-                MySqlConnection conDatabase = new MySqlConnection(constring);
-                MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
-                MySqlDataReader myReader;
-
-                try
-                {
-                    conDatabase.Open();
-                    myReader = cmdDatabase.ExecuteReader();
-                    //MessageBox.Show("Data has been Updated");
-                    while (myReader.Read())
-                    {
-
-                        spassword = myReader.GetString("password");
-                        sprof = myReader.GetString("profession");
-
-
-                        if (spassword == password && sprof == "Admin")
-                        {
-                            checkLogin = true;
-
-                        }
-                        else
-                        {
-                            checkLogin = false;
-                        }
-
-
-
-                    }
-                    return (checkLogin);
-
-
-                }
-                catch (Exception ex)
-                {
-
-                    MessageBox.Show(ex.Message);
-                    return (false);
-                }
-            }
-        }
+        
+        
     }
 }

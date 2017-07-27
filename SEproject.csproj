@@ -92,6 +92,7 @@
       <DependentUpon>Attendance.xaml</DependentUpon>
     </Compile>
     <Compile Include="AuthenticationDB.cs" />
+    <Compile Include="checkLogin.cs" />
     <Compile Include="Class1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,12 +142,6 @@
     </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Window2_AddMarkSheet.xaml.cs">
-      <DependentUpon>Window2_AddMarkSheet.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Window2_MarkSheet.xaml.cs">
-      <DependentUpon>Window2_MarkSheet.xaml</DependentUpon>
     </Compile>
     <Page Include="AddNew.xaml">
       <SubType>Designer</SubType>
@@ -235,14 +230,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Window2_AddMarkSheet.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Window2_MarkSheet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

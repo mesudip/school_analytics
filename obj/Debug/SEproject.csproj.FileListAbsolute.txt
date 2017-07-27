@@ -80,8 +80,6 @@ C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Student.g.cs
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Update.g.cs
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\ViewMarksheetPage.g.cs
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window1.g.cs
-C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window2_AddMarkSheet.g.cs
-C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window2_MarkSheet.g.cs
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\App.g.cs
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject_MarkupCompile.cache
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject_MarkupCompile.lref
@@ -113,8 +111,6 @@ C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Student.baml
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Update.baml
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\ViewMarksheetPage.baml
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window1.baml
-C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window2_AddMarkSheet.baml
-C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\Window2_MarkSheet.baml
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.g.resources
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.Class1.resources
 C:\Users\Zimba\Documents\SEgithub\school_analytics\obj\Debug\SEproject.Class2.resources

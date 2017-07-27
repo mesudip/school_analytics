@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
 using System.IO;
 using Microsoft.Win32;
+using System.Configuration;
 
 namespace SEproject
 {
@@ -32,8 +33,9 @@ namespace SEproject
         }
         void FillCombo()
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            string Query = "select * from school_analytics_system.student  ;";
+            // string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+            string Query = "select * from latestspas.student;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
@@ -45,7 +47,7 @@ namespace SEproject
                 //MessageBox.Show("Data has been Updated");
                 while (myReader.Read())
                 {
-                    string sName = myReader.GetString("Name");
+                    string sName = myReader.GetString("name");
                     comboBox1.Items.Add(sName);
 
                 }
@@ -91,13 +93,18 @@ namespace SEproject
 
         private void button_Click(object sender, RoutedEventArgs e) // pressing the update button
         {
-            bool c = checklogin1();
+
+            checkLogin asw = new checkLogin();
+            bool c = asw.checkLogin1();
             try
             {
                 if (c == true)
                 {
-                    string constring = "datasource=localhost;port=3306;username=root;password=12345";
-                    string Query = "update school_analytics_system.student set RollNo= '" + this.RollNo.Text + "', Name='" + this.Name.Text + "', Address= '" + this.Address.Text + "', Class= '" + this.Class.Text + "', DOB='" + this.DatePicker.Text + "', FatherName= '" + this.FatherName.Text + "', Fphone= '" + this.Phone.Text + "', Fmobile= '" + this.MobileNumber.Text + "', Femail= '" + this.Email.Text + "', MotherName= '" + this.MotherName.Text + "', Mphone= '" + this.Phone1.Text + "', Mmobile= '" + this.MobileNumber1.Text + "', Memail='" + this.Email1.Text + "', Gender= '" + Gender + "' , Bus= '" + BusService + "', Hostel= '" + HostelService + "' where  RollNo='" + this.RollNo.Text + "' ;";
+                    string enPassword = encrpted.Encrypt(this.Password.Text);
+                    // string constring = "datasource=localhost;port=3306;username=root;password=12345";
+                    string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+                     string Query = "update latestspas.student set idStudent= '" + this.studentId.Text + "', name='" + this.Name.Text + "', address= '" + this.Address.Text + "', class= '" + this.Class.Text + "', dob='" + this.DatePicker.Text + "', father_name= '" + this.FatherName.Text + "', father_phone= '" + this.Phone.Text + "', father_mobile= '" + this.MobileNumber.Text + "', father_email= '" + this.Email.Text + "', mother_name= '" + this.MotherName.Text + "', mother_phone= '" + this.Phone1.Text + "', mother_mobile= '" + this.MobileNumber1.Text + "', mother_email='" + this.Email1.Text + "', gender= '" + Gender + "' , bus= '" + BusService + "', hostel= '" + HostelService + "' where  idStudent='" + this.studentId.Text + "' ; update latestspas.login set Student_idStudent= '" + this.studentId.Text + "', login_id= '"+this.studentId.Text+"', password='"+enPassword+"', profession='"+"student"+ "'where  Student_idStudent='" + this.studentId.Text + "' ";
+                    //string Query = "update latestspas.student (idStudent, name, address, class, dob, roll_no, father_name,father_phone, father_mobile, father_email, mother_name, mother_phone, mother_mobile, mother_email, gender, bus, hostel) values ('" + this.studentId.Text + "','" + this.Name.Text + "', '" + this.Address.Text + "', '" + this.Class.Text + "', '" + this.DatePicker.Text + "', '" + this.RollNo.Text + "','" + this.FatherName.Text + "', '" + this.Phone.Text + "', '" + this.MobileNumber.Text + "', '" + this.Email.Text + "', '" + this.MotherName.Text + "', '" + this.Phone1.Text + "', '" + this.MobileNumber1.Text + "', '" + this.Email1.Text + "', '" + Gender + "' , '" + BusService + "', '" + HostelService + "') ; insert into latestspas.login (login_id, password,profession,Student_idStudent) values ('" + this.studentId.Text + "', '" + enPassword + "','" + "student" + "','" + this.studentId.Text + "');  ";
                     MySqlConnection conDatabase = new MySqlConnection(constring);
                     MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
                     MySqlDataReader myReader;
@@ -131,8 +138,9 @@ namespace SEproject
 
         private void button1_Click(object sender, RoutedEventArgs e)// presssing the upload image
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=12345";
-            string Query = "select * from school_analytics_system.student where Name= '" + comboBox1.Text + "' ;";
+            // string constring = "datasource=localhost;port=3306;username=root;password=12345";
+            string constring = ConfigurationManager.ConnectionStrings["MySQL"].ToString();
+            string Query = "select * from latestspas.student where name= '" + comboBox1.Text + "' ;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
@@ -148,22 +156,24 @@ namespace SEproject
                 {
                     //MessageBox.Show("Data has been Updated");
                     //myReader.Read();
-                    string sRollNo = myReader.GetString("RollNo");
-                    string sName = myReader.GetString("Name");
-                    string sAddress = myReader.GetString("Address");
-                    string sClass = myReader.GetString("Class").ToString();
-                    string sGender = myReader.GetString("Gender");
-                    string sDOB = myReader.GetString("DOB");
-                    string sFatherName = myReader.GetString("FatherName");
-                    string sFphone = myReader.GetString("Fphone");
-                    string sFmobile = myReader.GetString("Fmobile");
-                    string sFemail = myReader.GetString("Femail");
-                    string sMotherName = myReader.GetString("MotherName");
-                    string sMphone = myReader.GetString("Mphone");
-                    string sMmobile = myReader.GetString("Mmobile");
-                    string sMemail = myReader.GetString("Memail");
-                    string sBus = myReader.GetString("Bus");
-                    string sHostel = myReader.GetString("Hostel");
+                    string sstudentId = myReader.GetString("idStudent");
+                    string sRollNo = myReader.GetString("roll_no");
+                    string sName = myReader.GetString("name");
+                    string sAddress = myReader.GetString("address");
+                    string sClass = myReader.GetString("class").ToString();
+                    string sGender = myReader.GetString("gender");
+                    string sDOB = myReader.GetString("dob");
+                    string sFatherName = myReader.GetString("father_name");
+                    string sFphone = myReader.GetString("father_phone");
+                    string sFmobile = myReader.GetString("father_mobile");
+                    string sFemail = myReader.GetString("father_email");
+                    string sMotherName = myReader.GetString("mother_name");
+                    string sMphone = myReader.GetString("mother_phone");
+                    string sMmobile = myReader.GetString("mother_mobile");
+                    string sMemail = myReader.GetString("mother_email");
+                    string sBus = myReader.GetString("bus");
+                    string sHostel = myReader.GetString("hostel");
+                    studentId.Text = sstudentId;
                     RollNo.Text = sRollNo;
                     Name.Text = sName;
                     Address.Text = sAddress;
@@ -195,61 +205,7 @@ namespace SEproject
             }
 
         }
-        private bool checklogin1()
-        {
-            string spassword, sprof;
-            login login1 = new login();
-            string password = login.Gpassword;
-            string id = login.GID;
-            if (id == "071bct550" && password == "zimba")
-            {
-                //MessageBox.Show("login successfully");
-                return true;
-            }
-            else
-            {
-                string constring = "datasource=localhost;port=3306;username=root;password=12345";
-                string Query = "select * from school_analytics_system.staff  where user_id= '" + id + "';";
-                MySqlConnection conDatabase = new MySqlConnection(constring);
-                MySqlCommand cmdDatabase = new MySqlCommand(Query, conDatabase);
-                MySqlDataReader myReader;
-
-                try
-                {
-                    conDatabase.Open();
-                    myReader = cmdDatabase.ExecuteReader();
-                    //MessageBox.Show("Data has been Updated");
-                    while (myReader.Read())
-                    {
-
-                        spassword = myReader.GetString("password");
-                        sprof = myReader.GetString("profession");
-
-
-                        if (spassword == password && sprof == "Admin")
-                        {
-                            checkLogin = true;
-
-                        }
-                        else
-                        {
-                            checkLogin = false;
-                        }
-
-
-
-                    }
-                    return (checkLogin);
-
-
-                }
-                catch (Exception ex)
-                {
-
-                    MessageBox.Show(ex.Message);
-                    return (false);
-                }
-            }
+        
         }
 
     }
@@ -296,4 +252,4 @@ namespace SEproject
       
 
      
-    }
+  

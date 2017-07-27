@@ -20,6 +20,8 @@
         </GroupBox>
         <Label x:Name="label" Content="Name" HorizontalAlignment="Left" Height="23" Margin="21,90,0,0" VerticalAlignment="Top" Width="88"/>
         <TextBox x:Name="Name" HorizontalAlignment="Left" Height="23" Margin="134,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="13" Background="#FFF9F9F9" BorderBrush="#FFF9F9F9"/>
+        <Label x:Name="labelq" Content="Student Id" HorizontalAlignment="Left" Height="23" Margin="116,88,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1"/>
+        <TextBox x:Name="studentId" HorizontalAlignment="Left" Height="23" Margin="229,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Grid.Column="1" BorderBrush="{x:Null}" FontWeight="Bold"/>
         <Label x:Name="label1" Content="Address" HorizontalAlignment="Left" Height="23" Margin="21,118,0,0" VerticalAlignment="Top" Width="88"/>
         <TextBox x:Name="Address" HorizontalAlignment="Left" Height="23" Margin="134,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" FontWeight="Bold" BorderBrush="#FFF9F9F9" Background="#FFF9F9F9"/>
         <Label x:Name="label2" Content="Class" HorizontalAlignment="Left" Height="23" Margin="21,146,0,0" VerticalAlignment="Top" Width="88"/>
