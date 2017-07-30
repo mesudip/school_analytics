@@ -8,23 +8,45 @@
       d:DesignHeight="600" d:DesignWidth="850"
       Title="HomePage">
 
-    <Grid>
-        <Calendar HorizontalAlignment="Left" VerticalAlignment="Top" Margin="549,177,0,0" Height="189" Width="219"/>
+    <Grid Margin="0,-1,0,1">
 
 
-        <GroupBox x:Name="groupBox"  HorizontalAlignment="Left" Height="250" Margin="39,116,0,0" VerticalAlignment="Top" Width="325">
-            <Label x:Name="label8" Content="Apr 1-     All Year I part Exam Start" HorizontalAlignment="Left" Margin="-6,196,0,0" VerticalAlignment="Top" Width="232"/>
+        <GroupBox x:Name="groupBox"  HorizontalAlignment="Left" Height="203" Margin="392,86,0,0" VerticalAlignment="Top" Width="325">
+            
+        </GroupBox>
+        <GroupBox x:Name="groupBox1" Header="New" HorizontalAlignment="Left" Height="336" Margin="38,76,0,0" VerticalAlignment="Top" Width="314">
+
 
         </GroupBox>
-        <Label x:Name="label" Content="Events" HorizontalAlignment="Left" Height="38" Margin="39,103,0,0" VerticalAlignment="Top" Width="325" Background="#FF0597B8" Foreground="White"/>
-        <Label x:Name="label1" Content="Feb 9 -   Pulchowk Locus 2017 (Day 1)" HorizontalAlignment="Left" Height="33" Margin="39,206,0,0" VerticalAlignment="Top" Width="221"/>
-        <Label x:Name="label2" Content="Feb 10 -  Pulchowk Locus 2017 (Day 2)" HorizontalAlignment="Left" Height="33" Margin="39,239,0,0" VerticalAlignment="Top" Width="221"/>
-        <Label x:Name="label3" Content="Feb 11 -  Pulchowk Locus 2017 (Day 3)" HorizontalAlignment="Left" Height="33" Margin="39,259,0,0" VerticalAlignment="Top" Width="221"/>
-        <Label x:Name="label4" Content="Feb 14 -  Pulchowk Locus 2017 (Closing Ceremony)" HorizontalAlignment="Left" Height="33" Margin="39,288,0,0" VerticalAlignment="Top" Width="291"/>
-        <Label x:Name="label5" Content="Feb 3 -   Pulchowk Locus Hack-a-Week (start)" HorizontalAlignment="Left" Height="33" Margin="39,146,0,0" VerticalAlignment="Top" Width="291"/>
-        <Label x:Name="label6" Content="Feb 7 -   Pulchowk Locus Hack-a-Week (End)" HorizontalAlignment="Left" Height="33" Margin="39,173,0,0" VerticalAlignment="Top" Width="291"/>
-        <Label x:Name="label7" Content="Search" HorizontalAlignment="Left" Height="29" Margin="427,103,0,0" VerticalAlignment="Top" Width="115" Background="#FF0597B8" BorderBrush="#FF0597B8" Foreground="White"/>
-        <ComboBox x:Name="comboBox" Text="Search Name" HorizontalAlignment="Left" Height="29" Margin="557,103,0,0" VerticalAlignment="Top" Width="181" IsEditable="True" FontStyle="Italic" Foreground="#FF919191"/>
+        <Label x:Name="label" Content="Upcomming Events" HorizontalAlignment="Left" Height="27" Margin="392,90,0,0" VerticalAlignment="Top" Width="325" Background="#FF0597B8" Foreground="White"/>
+        <Label x:Name="label3" Content="Feb 9 -   Pulchowk Locus 2017 (Day 1)" HorizontalAlignment="Left" Height="33" Margin="392,160,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label x:Name="label4" Content="Feb 10 -  Pulchowk Locus 2017 (Day 2)" HorizontalAlignment="Left" Height="33" Margin="392,182,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label x:Name="label5" Content="Feb 11 -  Pulchowk Locus 2017 (Day 3)" HorizontalAlignment="Left" Height="33" Margin="392,204,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label x:Name="label6" Content="Feb 14 -  Pulchowk Locus 2017 (Closing Ceremony)" HorizontalAlignment="Left" Height="33" Margin="393,226,0,0" VerticalAlignment="Top" Width="291"/>
+        <Label x:Name="label7" Content="Feb 14 -  Pulchowk Locus 2017 (Closing Ceremony)" HorizontalAlignment="Left" Height="33" Margin="393,249,0,0" VerticalAlignment="Top" Width="291"/>
+        <Label x:Name="label1" Content="Feb 3 -   Pulchowk Locus Hack-a-Week (start)" HorizontalAlignment="Left" Height="33" Margin="392,116,0,0" VerticalAlignment="Top" Width="291"/>
+        <Label x:Name="label2" Content="Feb 7 -   Pulchowk Locus Hack-a-Week (End)" HorizontalAlignment="Left" Height="33" Margin="392,138,0,0" VerticalAlignment="Top" Width="291"/>
+        <TextBox x:Name="EventName" HorizontalAlignment="Left" Height="24" Margin="134,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Foreground="#FFA49E9E" FontStyle="Italic"/>
+        <Label x:Name="label9" Content="Event Name" HorizontalAlignment="Left" Height="28" Margin="50,105,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label x:Name="label10" Content="Event Date" HorizontalAlignment="Left" Height="28" Margin="50,135,0,0" VerticalAlignment="Top" Width="122"/>
+        <DatePicker x:Name="dateInsert" HorizontalAlignment="Left" Height="26" Margin="135,137,0,0" VerticalAlignment="Top" Width="199" Foreground="#FFA2A2A2" FontStyle="Italic" Background="WhiteSmoke">
+            <DatePicker.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                    <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.375"/>
+                    <GradientStop Color="#FFC1C1C1" Offset="1"/>
+                </LinearGradientBrush>
+            </DatePicker.BorderBrush>
+        </DatePicker>
+        <TextBox x:Name="EventBy" HorizontalAlignment="Left" Height="24" Margin="134,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Foreground="#FFA49E9E" FontStyle="Italic"/>
+        <Label x:Name="label12" Content="Event By" HorizontalAlignment="Left" Height="28" Margin="50,167,0,0" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:Name="EventDetails" HorizontalAlignment="Left" Height="147" Margin="134,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Foreground="#FFA49E9E" FontStyle="Italic"/>
+        <Label x:Name="label11" Content="Event Details" HorizontalAlignment="Left" Height="28" Margin="51,199,0,0" VerticalAlignment="Top" Width="122"/>
+
+        <Button x:Name="Create" Content="Create" HorizontalAlignment="Left" Height="25" Margin="135,365,0,0" VerticalAlignment="Top" Width="201" BorderBrush="#FF0597B8" Background="#FF0597B8" Foreground="#FFF3F3F3" Click="Create_Click"/>
+
+
 
     </Grid>
 </Page>

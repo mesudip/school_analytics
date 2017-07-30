@@ -16,7 +16,7 @@
         <Button x:Name="Minimizebutton" Content="_" HorizontalAlignment="Left" Margin="906,5,0,0" VerticalAlignment="Top" Width="24" Height="22" RenderTransformOrigin="0.4,-1.522" FontSize="14" Background="{x:Null}" BorderBrush="WhiteSmoke" Click="Minimizebutton_Click"/>
         <Button x:Name="CloseButton" Content="X" HorizontalAlignment="Left" Margin="935,5,0,0" VerticalAlignment="Top" Width="25" Height="22" Background="{x:Null}" Click="CloseButton_Click" RenderTransformOrigin="-0.793,0.607" BorderBrush="WhiteSmoke"/>
 
-        <Label x:Name="label" Content="School Management System" HorizontalAlignment="Left" VerticalAlignment="Top" Width="175" Margin="10,1,0,0" Foreground="#FF767676"/>
+        <Label x:Name="label" Content="School Performance Analysis System" HorizontalAlignment="Left" VerticalAlignment="Top" Width="223" Margin="3,1,0,0" Foreground="#FF767676"/>
 
 
         <StackPanel Margin="0,73,0,0">
