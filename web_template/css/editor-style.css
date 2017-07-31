@@ -1,0 +1,121 @@
+/*
+Theme Name: Lectura Lite
+Description: Used to style the TinyMCE editor.
+*/
+
+
+body {
+	color: #555;
+	font-family: 'Source Sans Pro', Arial, Tahoma, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.75em;
+	max-width: 460px;
+	vertical-align: baseline;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1.75em;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+    color:#999;
+    border-left: solid 3px #ececec;
+    padding: 0 15px;
+    margin: 10px;
+}
+
+blockquote > blockquote {
+	margin-left: 0;
+}
+
+blockquote p {
+	margin-bottom: 35px;
+}
+
+blockquote > p:last-child {
+	margin-bottom: 0;
+}
+
+/**
+ * 3.0 Elements
+ */
+
+ul,
+ol {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: square;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin: 0 0 0 20px;
+}
+
+/**
+ * 4.0 Alignment
+ */
+
+.alignleft {
+	float: left;
+	margin: 0 20px 5px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 5px 20px;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}

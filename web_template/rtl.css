@@ -1,0 +1,238 @@
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+.wrapper {
+	text-align: right; 
+}
+
+.wrapper-center {
+	text-align: center;
+}
+
+#container {
+	text-align: center;
+}
+
+#logo {
+	float: right;
+	margin-right: 20px;
+	margin-left: 0;
+}
+
+/* The menu to the right of the logo */
+
+#useful-menu {
+	float: left;
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+#useful-menu .useful-menu li {
+	float: right;
+	margin-right: 15px;
+	margin-left: 0;
+} 
+
+#content .academia-column {
+	float: right;
+}
+
+#content .wrapper-reversed .academia-column {
+	float: left;
+}
+
+#content .academia-column-marginright {
+	margin-right: 0;
+	margin-left: 3.125%;
+}
+
+#content .academia-column-marginleft {
+	margin-right: 3.125%;
+	margin-left: 0;
+}
+
+#content .academia-column-last {
+	margin-right: auto;
+	margin-left: 0;
+}
+
+/* Featured Pages */
+
+.academia-featured-page {
+	float: right;
+	margin-right: auto;
+	margin-left: 3.125%;
+}
+
+.academia-featured-page-3 {
+	margin-right: auto;
+	margin-left: 0;
+}
+
+.academia-loop-post .post-cover {
+	float: right;
+	margin-right: 0;
+	margin-left: 3.1746%;
+}
+
+.academia-post .post-cover,
+.recent-posts .academia-post .post-cover {
+	float: right;
+	width: auto;
+}
+
+.post-meta-single .post-meta time {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+.post-single ul, 
+.post-single ol {
+	margin-right: 1em;
+	margin-left: 0; 
+}
+
+.post-single li {
+	margin-right: 20px;
+	margin-left: 0;
+} 
+
+.post-single blockquote {
+    border-left: 0;
+    border-right: solid 3px #ececec;
+}
+
+.commentlist .children {
+	padding-right: 12.9032%;
+	padding-left: 0;
+}
+
+.commentlist .comment-author {
+	float: right;
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+.commentlist .comment-timestamp {
+	text-align: left;
+}
+
+footer .academia-column {
+	float: right;
+	margin-right: 0; 
+	margin-left: 3.125%;
+}
+
+footer .academia-column-3 {
+	margin-right: auto;
+	margin-left: 0;
+}
+
+footer .academia-credit {
+	float: left;
+	margin-right: 30px;
+	margin-left: 0;
+}
+
+/* Begin Images */
+.post-single .alignright { 
+	margin-right: 20px;
+	margin-left: 0; 
+}
+.post-single .alignleft { 
+	margin-right: 0;
+	margin-left: 20px; 
+}
+
+.alignright { float: left; }
+.alignleft { float: right; }
+
+/* [gallery] shortcode styling */
+
+.post-single .gallery-caption { margin-right: 0; margin-left: auto; }
+
+/* Recent Comments Widget */
+
+.recent-comments-list .post-cover {
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.flex-direction-nav a {
+	text-indent:9999px; 
+}
+
+/********************************************************************************************* 
+
+12. Media Queries 
+
+*********************************************************************************************/   
+ 
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+
+	/* Header */
+	
+	#logo {
+		float: none;
+	}
+	
+	#useful-menu {
+		float: none;
+	}
+
+	#useful-menu .useful-menu li {
+		float: none;
+	}
+	
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media screen and (max-width: 640px) {
+
+	/* Homepage Columns */
+	
+	#content .academia-column-half {
+		float: none;
+		margin-left: 0;
+	}
+	
+	/* Layout Columns */
+	
+	#content .academia-column-main,
+	#content .academia-column-aside {
+		float: none;
+		margin-left: 0;
+	}
+	
+	.recent-posts .academia-post .post-cover {
+		margin-right: 0;
+		margin-left: 3%;
+	}
+	
+	/* Featured Pages Widget */
+	
+	.academia-featured-page {
+		clear: right;
+		float: none;
+		margin-right: auto;
+		margin-left: 0;
+	}
+	
+	.academia-featured-page .post-cover {
+		float: right;
+		margin-right: 0;
+		margin-left: 15px;
+	}
+	
+	/* Footer */
+	
+	footer .academia-column {
+		float: none;
+		margin-left: 0;
+	}
+	
+}

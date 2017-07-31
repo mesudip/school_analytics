@@ -1,0 +1,35 @@
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\Account Assistant.exe.config
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\Account Assistant.exe
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\Account Assistant.pdb
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Data.dll
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Data.Entity.dll
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Web.dll
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Data.xml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\bin\Debug\MySql.Web.xml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Account Assistant.csprojResolveAssemblyReference.cache
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Account Assistant.csproj.Account Assistant.exe.config
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\AddNew.g.cs
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\HomePage.g.cs
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\login.g.cs
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\MainWindow.g.cs
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\OptionView.g.cs
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Student.g.cs
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\App.g.cs
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Account Assistant_MarkupCompile.cache
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Account Assistant_MarkupCompile.lref
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\AddNew.baml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\HomePage.baml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\login.baml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\MainWindow.baml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\OptionView.baml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Student.baml
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Account Assistant.g.resources
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Account_Assistant.Properties.Resources.resources
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Account Assistant.csproj.GenerateResource.Cache
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Account Assistant.exe
+C:\Users\Sudip Bhattarai\Documents\school_analytics\Account Assistant\obj\Debug\Account Assistant.pdb

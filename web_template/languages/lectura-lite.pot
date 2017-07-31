@@ -1,0 +1,369 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Lectura Lite v1.0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"POT-Revision-Date: Thu Feb 23 2017 12:12:06 GMT+0100 (W. Europe Standard "
+"Time)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: admin <academiathemes@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: ../404.php:10
+msgid "Page not found"
+msgstr ""
+
+#: ../404.php:15
+msgid ""
+"Apologies, but the requested page cannot be found. Perhaps searching will "
+"help find a related page."
+msgstr ""
+
+#: ../404.php:21
+msgid "Browse Categories"
+msgstr ""
+
+#: ../404.php:26
+msgid "Monthly Archives"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:12
+msgid "General Settings"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:13
+msgid "This controls various general theme settings."
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:21
+msgid "Homepage Settings"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:22
+msgid "This controls various homepage theme settings."
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:30
+msgid "Color Settings"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:31
+msgid "Customize some basic theme colors."
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:50
+msgid "Logo File Upload"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:57 ../footer.php:54
+msgid "Copyright &copy; "
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:57 ../footer.php:54
+msgid "All Rights Reserved"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:69
+msgid "Copyright text in Footer"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:86
+msgid "Display Slideshow"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:102
+msgid "Number of Images to Display"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:119
+msgid "Display Featured Pages"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:134
+msgid "Featured Page #1"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:149
+msgid "Featured Page #2"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:164
+msgid "Featured Page #3"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:182
+msgid "Header top border color"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:203
+msgid "Menu background color"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:224
+msgid "Main body text color"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:245
+msgid "Main body anchor(link) color"
+msgstr ""
+
+#: ../academia-admin/academia-customizer.php:265
+msgid "Main body anchor(link) :hover color"
+msgstr ""
+
+#: ../academia-admin/post-options.php:11
+msgid "Post Options"
+msgstr ""
+
+#: ../academia-admin/post-options.php:64
+msgid "Feature this Post in the Homepage Slideshow"
+msgstr ""
+
+#: ../comments.php:2
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:14
+msgid "No Comments"
+msgstr ""
+
+#: ../comments.php:14
+msgid "One Comment"
+msgstr ""
+
+#: ../comments.php:14
+#, php-format
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:18 ../comments.php:32
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: ../comments.php:18 ../comments.php:32
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../comments.php:44
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:59
+msgid "Your Name"
+msgstr ""
+
+#: ../comments.php:64
+msgid "Your Email"
+msgstr ""
+
+#: ../comments.php:69
+msgid "Your Website"
+msgstr ""
+
+#: ../comments.php:76
+msgid "Comment"
+msgstr ""
+
+#: ../comments.php:79
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\">Log out?</a>"
+msgstr ""
+
+#: ../comments.php:80
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../comments.php:81
+msgid "Cancel"
+msgstr ""
+
+#: ../comments.php:82
+msgid "Submit Comment"
+msgstr ""
+
+#: ../content-page.php:18
+msgid "Edit page"
+msgstr ""
+
+#: ../content-page.php:29 ../content-post.php:22
+msgid "Pages"
+msgstr ""
+
+#: ../content-post.php:11
+msgid "Edit post"
+msgstr ""
+
+#: ../content-post.php:23
+msgid "Tags"
+msgstr ""
+
+#: ../featured-pages.php:23 ../featured-pages.php:48 ../featured-pages.php:73 ..
+#: /loop-archives.php:27 ../loop.php:14
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../footer.php:53
+msgid "Theme by"
+msgstr ""
+
+#: ../functions.php:87
+msgid "Main Menu"
+msgstr ""
+
+#: ../functions.php:88
+msgid "Secondary (Top) Menu"
+msgstr ""
+
+#: ../functions.php:134 ../functions.php:147
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:156
+msgid "Homepage Content: Left Column"
+msgstr ""
+
+#: ../functions.php:165
+msgid "Homepage Content: Right Column"
+msgstr ""
+
+#: ../functions.php:177
+msgid "Footer: Column 1"
+msgstr ""
+
+#: ../functions.php:185
+msgid "Footer: Column 2"
+msgstr ""
+
+#: ../functions.php:193
+msgid "Footer: Column 3"
+msgstr ""
+
+#: ../functions.php:280
+msgid "&laquo;"
+msgstr ""
+
+#: ../functions.php:281
+msgid "&raquo;"
+msgstr ""
+
+#: ../functions.php:292
+msgid "Page"
+msgstr ""
+
+#: ../functions.php:292
+msgid "of"
+msgstr ""
+
+#: ../functions.php:322
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../functions.php:323
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:323
+msgid "Edit"
+msgstr ""
+
+#: ../functions.php:327
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:348
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:348
+msgid "(Edit)"
+msgstr ""
+
+#: ../header.php:66
+msgid "Please set your Main Menu on this page:"
+msgstr ""
+
+#: ../header.php:66
+msgid "Appearance > Menus"
+msgstr ""
+
+#: ../header.php:67
+msgid "Other options and theme elements can be set up on this page:"
+msgstr ""
+
+#: ../header.php:67
+msgid "Appearance > Customize"
+msgstr ""
+
+#: ../pagination.php:14
+msgid "&larr; Previous"
+msgstr ""
+
+#: ../pagination.php:15
+msgid "Next &rarr;"
+msgstr ""
+
+#: ../search.php:10
+msgid "Search Results for"
+msgstr ""
+
+#: ../slideshow-home.php:33
+msgid "Continue Reading"
+msgstr ""
+
+#: ../slideshow-home.php:47
+msgid "Please mark some posts as \"Featured\" for the Homepage Slideshow."
+msgstr ""
+
+#: ../slideshow-home.php:49
+msgid "For more information please"
+msgstr ""
+
+#: ../slideshow-home.php:49
+msgid "read the documentation"
+msgstr ""
+
+#. Name of the theme
+msgid "Lectura Lite"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://www.academiathemes.com/themes/lectura-lite/"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Lectura Lite is a simplified and free version of the Lectura WordPress "
+"Education Theme developed for schools, universities, kindergartens, "
+"organizations, companies, etc."
+msgstr ""
+
+#. Author of the theme
+msgid "AcademiaThemes.com"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.academiathemes.com/"
+msgstr ""

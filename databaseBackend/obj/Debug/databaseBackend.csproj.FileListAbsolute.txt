@@ -1,0 +1,7 @@
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\databaseBackend\bin\Debug\databaseBackend.dll
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\databaseBackend\bin\Debug\databaseBackend.pdb
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\databaseBackend\bin\Debug\MySql.Data.dll
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\databaseBackend\bin\Debug\MySql.Data.xml
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\databaseBackend\obj\Debug\databaseBackend.csprojResolveAssemblyReference.cache
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\databaseBackend\obj\Debug\databaseBackend.dll
+C:\Users\Zimba\Documents\Visual Studio 2015\Projects\SEproject\databaseBackend\obj\Debug\databaseBackend.pdb
